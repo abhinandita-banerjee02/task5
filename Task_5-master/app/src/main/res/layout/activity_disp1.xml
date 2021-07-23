@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stage1">
+
+    <TextView
+        android:id="@+id/optionText"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Options"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Important"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.105"
+        android:id="@+id/important"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy1"
+        android:layout_width="0dp"
+        android:padding="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/important" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Files"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.105"
+        android:id="@+id/files"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recy1"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="0dp"
+        android:id="@+id/recy2"
+        app:layout_constraintTop_toBottomOf="@id/files"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Others"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.105"
+        android:id="@+id/others"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recy2"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:padding="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/recy3"
+        app:layout_constraintTop_toBottomOf="@id/others"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
